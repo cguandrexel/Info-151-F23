@@ -358,6 +358,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-button {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -384,12 +395,8 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  color: white;
+nav ul li {
+  color: #fff;
 }
 
 /* =============
@@ -398,3 +405,6 @@ ul {
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 100px;
+}
