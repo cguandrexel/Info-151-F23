@@ -337,6 +337,10 @@ body {
   background-color: var(--purple);
 }
 
+#validation-logo {
+  margin-top: 60px;
+}
+
 /* =============
     Typography
 ============= */
@@ -407,4 +411,10 @@ nav ul li {
 ============= */
 #hero {
   margin-top: 100px;
+}
+#hero section h1 {
+  color: white;
+}
+#hero section p {
+  color: grey;
 }
