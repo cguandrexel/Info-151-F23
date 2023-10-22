@@ -1,3 +1,20 @@
 /* =============
     Buttons
 ============= */
+button{
+    border: none;
+}
+
+.active-button{
+    background-color: var(--blue);
+    color: #fff;
+    padding: 15px 30px; 
+    border-radius: 5px;
+}
+
+.inactive-button{
+    background-color: var(--lightBlue);
+    color: var(--blue);
+    padding: 15px 30px; 
+    border-radius: 5px;
+}
