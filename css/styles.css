@@ -333,6 +333,10 @@ template {
 /* =============
     Base
 ============= */
+#validation-logo {
+  margin-top: 60px;
+}
+
 /* =============
     Typography
 ============= */
@@ -379,25 +383,25 @@ textarea {
 /* =============
     Footer
 ============= */
-#Footer {
+footer {
+  color: var(--white);
+}
+footer #footer-top {
   background-color: var(--black);
+  padding: 100px 0;
 }
-#Footer h2 {
-  color: var(--white);
-}
-#Footer p {
-  color: var(--white);
-}
-#Footer ul li {
-  color: var(--white);
-}
-#Footer form {
+footer #footer-top form {
   padding: 9px;
   background-color: var(--black);
   display: inline-block;
   border-radius: 5px;
 }
-#Footer form input {
+footer #footer-top form input {
   border: none;
   background-color: var(--black);
+}
+footer #footer-bottom {
+  background-color: var(--black);
+  margin-top: none;
+  padding: 35px 0;
 }
