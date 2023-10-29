@@ -380,8 +380,8 @@ button {
 }
 
 .blue-button:hover {
-  background-color: var(--blue);
-  color: #fff;
+  background-color: var(--white);
+  color: var(--purple);
 }
 
 /* =============
