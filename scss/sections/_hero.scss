@@ -4,11 +4,23 @@
 #hero{
     margin-top: 100px;
     section{
+
         h1{
             color: white;
+            font-size: rem-calc(62)
         }
+
         p{
             color: grey;
+            font-size: rem-calc(18);
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
+
+        #hero-title-container{
+            display: flex;
+        }
+
     }
+
 }

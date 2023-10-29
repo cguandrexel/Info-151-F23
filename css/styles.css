@@ -344,6 +344,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -371,6 +375,13 @@ button {
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.blue-button:hover {
+  background-color: var(--blue);
+  color: #fff;
 }
 
 /* =============
@@ -396,13 +407,43 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--blue);
+}
+nav ul li a.selected {
+  color: var(--blue);
+  text-decoration: underline;
+}
+nav ul #sign-in-button {
+  margin-left: auto;
+}
+
 /* =============
     Header
 ============= */
-nav ul li {
-  color: #fff;
-}
-
 /* =============
     Footer
 ============= */
@@ -414,7 +455,16 @@ nav ul li {
 }
 #hero section h1 {
   color: white;
+  font-size: 3.875rem;
 }
 #hero section p {
   color: grey;
+  font-size: 1.125rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#hero section #hero-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
