@@ -5,16 +5,16 @@ button{
     border: none;
 }
 
-.active-button{
+.blue-btn{
     background-color: var(--blue);
-    color: #fff;
-    padding: 15px 30px; 
+    color: var(--white);
+    padding: 15px 30px;
     border-radius: 5px;
 }
 
-.inactive-button{
-    background-color: var(--lightBlue);
+.disabled-btn{
+    background-color: var(--blueLight);
     color: var(--blue);
-    padding: 15px 30px; 
+    padding: 15px 30px;
     border-radius: 5px;
 }

@@ -2,10 +2,26 @@
     Plan
 ============= */
 
-.plan-tier-desc{
-    color: grey;
+// .plan-tier-desc{
+//     color: grey;
+// }
+
+// .plan-tier-name{
+//     color: grey;
+// }
+
+section{
+
+    ul{
+        display: flex;
+    
+        li{
+            .plan-tier-desc{
+                list-style: none;
+            }
+        }
+    
+    }
+
 }
 
-.plan-tier-name{
-    color: grey;
-}
