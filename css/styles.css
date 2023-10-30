@@ -414,11 +414,52 @@ textarea {
 /* =============
     Plan
 ============= */
-section ul {
+#plans h1 {
+  margin-bottom: 30px;
+}
+#plans .plan-card-name-list {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-section ul li .plan-tier-desc {
+#plans .plan-card-name-list h1, #plans .plan-card-name-list h2 {
+  text-align: center;
+}
+#plans .plan-detail-list {
   list-style: none;
+}
+#plans .plan-detail-list li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#plans .plan-card {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: var(--white);
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+  padding: 50px;
+  margin-right: 30px;
+}
+#plans .plan-card button {
+  margin-top: 50px;
+}
+#plans #selected-card {
+  background-color: var(--purple);
+  padding: 1px;
+  border-radius: 10px;
+}
+#plans #selected-card div {
+  border-radius: 10px;
+  background-color: var(--white);
+}
+#plans #selected-card div #selected-top {
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+}
+#plans #selected-card div #selected-bottom {
+  padding: 0px 50px 50px 50px;
 }
