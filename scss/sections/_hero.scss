@@ -1,26 +1,40 @@
 /* =============
     Hero
 ============= */
+// #hero{
+//     margin-top: 100px;
+//     section{
+//         //background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+//         h1{
+//             color: white;
+//             font-size: rem-calc(62)
+//         }
+
+//         p{
+//             color: grey;
+//             font-size: rem-calc(18);
+//             margin-top: 25px;
+//             margin-bottom: 25px;
+//         }
+
+//         #hero-title-container{
+//             display: flex;
+//             background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+//         }
+
+//     }
+
+// }
+
 #hero{
-    margin-top: 100px;
-    section{
-
-        h1{
-            color: white;
-            font-size: rem-calc(62)
-        }
-
-        p{
-            color: grey;
-            font-size: rem-calc(18);
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        #hero-title-container{
-            display: flex;
-        }
-
-    }
-
-}
+    color: var(--white);
+     background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+ 
+     #hero-content{
+         h1{
+             margin-bottom: 140px;
+             font-size: rem-calc(60);
+             font-weight: 600;
+         }
+     }
+ }

@@ -3,7 +3,16 @@
 ============= */
 
 body{
-    background-color: var(--purple);
+    // background-color: var(--purple);
+    background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+    main{
+        display: grid;
+        grid-template-columns: auto 10px auto;
+        grid-area: ". main-grid-area .";
+        #main-grid-item{
+            grid-area: main-grid-area;
+        }
+    }
 }
 
 #validation-logo{
