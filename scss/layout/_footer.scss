@@ -17,7 +17,7 @@ footer{
         #footer-top-grid-item{
             grid-area: footer-top-grid-item-area;
             display: grid;
-            grid-template-columns: 30% 20% 20% auto;
+            grid-template-columns: 20% 18% 20% auto;
         }
 
         aside{
@@ -75,13 +75,7 @@ footer{
 
             h1{
                 font-size: rem-calc(22);
-                margin-bottom: 20px;
-            }
-
-            h2{
-                margin-bottom: 20px;
-                font-weight: 500;
-                font-size: rem-calc(18);
+                margin-bottom: 50px;
             }
 
             a:link, a:visited{
@@ -93,17 +87,25 @@ footer{
                 color: var(--blue);
             }
 
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
 
             form{
-            padding: 9px;
-            background-color: var(--black);
-            //for week 4
-            display: inline-block;
-            border-radius: 5px;
-            input{
-                border: solid 1px var(--gray);
-                background-color: var(--black)
-            }
+                padding: 9px;
+                background-color: var(--black);
+                //for week 4
+                //display: inline-block;
+                display: flex;
+                border-radius: 5px;
+                input{
+                    border: solid 1px var(--gray);
+                    margin-right: auto;
+                    background-color: var(--black)
+                    width: 100%
+                    }
             }
         }
     }
