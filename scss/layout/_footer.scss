@@ -6,21 +6,11 @@ footer{
     
     color: var(--white);
 
-    // a{
-    //     text-decoration: none;
-    //     color: var(--gray);
-    // }
-
     #footer-top{
 
         background-color: var(--black);
         padding: 100px 0;
         display: flex;
-
-        // a{
-        //     text-decoration: none;
-        //     color: var(--gray);
-        // }
 
         aside{
 
@@ -51,11 +41,9 @@ footer{
         section{
 
             margin-left: 80px;
-
             h1{
                 font-size: rem-calc(22);
             }
-
             .link-list{
                 margin-top: 30px;
                 li{

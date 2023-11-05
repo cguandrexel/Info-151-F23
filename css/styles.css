@@ -334,6 +334,21 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: black;
+}
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+      grid-template-areas: grid-content;
+}
+body main #main-grid-item {
+  grid-area: grid-content;
+}
+
 #validation-logo {
   margin-top: 60px;
   text-align: center;

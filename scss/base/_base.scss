@@ -2,6 +2,23 @@
     Base
 ============= */
 
+body{
+
+    background-color: black;
+    main{
+        display: grid;
+        // grid-template-columns: auto 1140px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-areas: grid-content;
+        // align-items: center;
+        #main-grid-item{
+            grid-area: grid-content;
+            // align-items: center;
+        }
+    }
+}
+
 #validation-logo{
     margin-top: 60px;
     text-align: center;
