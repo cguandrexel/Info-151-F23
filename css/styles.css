@@ -402,6 +402,11 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -455,32 +460,35 @@ footer #footer-top aside ul li a {
 footer #footer-top section {
   margin-left: 80px;
 }
-footer #footer-top section h1 {
-  font-size: 1.375rem;
-}
-footer #footer-top section .link-list {
-  margin-top: 30px;
-}
-footer #footer-top section .link-list li {
-  list-style: none;
-  font-size: 1.125rem;
-  text-align: left;
-}
-footer #footer-top section .link-list li a {
-  text-decoration: none;
-  color: var(--gray);
-}
 footer #footer-top section p {
   font-size: reme-calc(18);
   margin-top: 30px;
 }
-footer #footer-top form {
+footer #footer-top section h1 {
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+}
+footer #footer-top section h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+footer #footer-top section a:link, footer #footer-top section a:visited {
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-bottom: 12px;
+}
+footer #footer-top section a:hover, footer #footer-top section a:active {
+  color: var(--blue);
+}
+footer #footer-top section form {
   padding: 9px;
   background-color: var(--black);
   display: inline-block;
   border-radius: 5px;
 }
-footer #footer-top form input {
+footer #footer-top section form input {
   border: solid 1px var(--gray);
   background-color: var(--black);
 }

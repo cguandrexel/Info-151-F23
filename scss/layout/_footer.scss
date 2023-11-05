@@ -18,7 +18,6 @@ footer{
             grid-area: footer-top-grid-item-area;
             display: grid;
             grid-template-columns: 30% 20% 20% auto;
-
         }
 
         aside{
@@ -50,30 +49,52 @@ footer{
         section{
 
             margin-left: 80px;
-            h1{
-                font-size: rem-calc(22);
-            }
-            .link-list{
-                margin-top: 30px;
-                li{
-                    list-style: none;
-                    font-size: rem-calc(18);
-                    text-align: left;
-                    a{
-                        text-decoration: none;
-                        color: var(--gray);
-                    }
-                }
-            }
+
+            // .link-list{
+            //     margin-top: 30px;
+            //     // a:link, a:visited{
+            //     //     color: var(--gray);
+            //     //     transition: 0.25s;
+            //     //     margin-bottom: 12px;
+            //     // }
+            //     // a:hover, a:active{
+            //     //     color: var(--blue);
+            //     // }
+            //     li{
+            //         a{
+            //             text-decoration: none;
+            //             color: var(--gray);
+            //         }
+            //     }
+            // }
 
             p{
                 font-size: reme-calc(18);
                 margin-top: 30px;
             }
-        }
+
+            h1{
+                font-size: rem-calc(22);
+                margin-bottom: 20px;
+            }
+
+            h2{
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: rem-calc(18);
+            }
+
+            a:link, a:visited{
+                color: var(--gray);
+                transition: 0.25s;
+                margin-bottom: 12px;
+            }
+            a:hover, a:active{
+                color: var(--blue);
+            }
 
 
-        form{
+            form{
             padding: 9px;
             background-color: var(--black);
             //for week 4
@@ -82,6 +103,7 @@ footer{
             input{
                 border: solid 1px var(--gray);
                 background-color: var(--black)
+            }
             }
         }
     }
