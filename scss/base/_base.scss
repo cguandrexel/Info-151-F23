@@ -2,6 +2,19 @@
     Base
 ============= */
 
+body{
+    main{
+
+        display: grid;
+        grid-template-columns: auto 1600px auto;
+        grid-template-areas: ". grid-content .";
+
+        #main-grid-item{
+            grid-area: grid-content;
+        }
+    }
+}
+
 #validation-logo{
     margin-top: 60px;
     text-align: center;

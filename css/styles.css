@@ -334,6 +334,19 @@ template {
 /* =============
     Base
 ============= */
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1600px auto;
+  grid-template-columns: auto 1600px auto;
+      grid-template-areas: ". grid-content .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: grid-content;
+}
+
 #validation-logo {
   margin-top: 60px;
   text-align: center;
@@ -430,7 +443,7 @@ textarea {
   text-align: center;
 }
 #plans #plan-title h1 {
-  font-size: 44px;
+  font-size: 2.75rem;
   font-style: normal;
   font-weight: 600;
 }
@@ -439,12 +452,11 @@ textarea {
 }
 #plans .plan-card-name-list {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 30 360px 30 360px;
+  grid-template-columns: 360px 360px 360px;
+  gap: 30;
 }
 #plans .plan-card-name-list h1, #plans .plan-card-name-list h2 {
   text-align: center;

@@ -15,7 +15,7 @@
     #plan-title{
         text-align: center;
         h1{
-            font-size: 44px;
+            font-size: rem-calc(44);
             font-style: normal;
             font-weight: 600;
         }
@@ -26,8 +26,13 @@
 
     .plan-card-name-list{
         margin-top: 30px;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+
+        display: grid;
+        grid-template-columns: 360px 360px 360px;
+        gap: 30;
+
         h1, h2{
             text-align: center;
         }
