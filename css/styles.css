@@ -351,6 +351,7 @@ body main #main-grid-item {
 
 #validation-logo {
   margin-top: 60px;
+  text-align: center;
 }
 
 ul {
@@ -445,7 +446,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 nav ul li a:link, nav ul li a:visited {
   color: white;
@@ -491,9 +492,25 @@ header #logo_container {
 ============= */
 #hero {
   color: var(--white);
+  background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
 }
-#hero #hero-content h1 {
-  margin-bottom: 140px;
-  font-size: 3.75rem;
+#hero #hero-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 37% auto;
+  grid-template-columns: 37% auto;
+}
+#hero #hero-content section {
+  margin-top: 50px;
+}
+#hero #hero-content section h1 {
+  margin-bottom: 25px;
+  font-size: 3.875rem;
   font-weight: 600;
+}
+#hero #hero-content section p {
+  margin-bottom: 35px;
+}
+#hero #hero-content aside {
+  margin-left: 80px;
 }

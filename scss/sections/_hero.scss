@@ -28,13 +28,28 @@
 
 #hero{
     color: var(--white);
-    // background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
+    background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
 
     #hero-content{
-        h1{
-            margin-bottom: 140px;
-            font-size: rem-calc(60);
-            font-weight: 600;
+        display: grid;
+        grid-template-columns: 37% auto;
+
+        section{
+            // display: grid;
+            // align-items: center;
+            margin-top: 50px;
+            h1{
+                margin-bottom: 25px;
+                font-size: rem-calc(62);
+                font-weight: 600;
+             }
+             p{
+                margin-bottom: 35px;
+             }
+
+        }
+         aside{
+            margin-left: 80px;
          }
      }
  }
