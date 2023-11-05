@@ -337,17 +337,6 @@ template {
 body {
   background-color: black;
 }
-body main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-      grid-template-areas: grid-content;
-}
-body main #main-grid-item {
-  grid-area: grid-content;
-}
 
 #validation-logo {
   margin-top: 60px;
@@ -425,9 +414,16 @@ footer {
 footer #footer-top {
   background-color: var(--black);
   padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". footer-top-grid-item-area .";
+}
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-top-grid-item-area;
 }
 footer #footer-top aside p {
   margin-top: 30px;
@@ -486,7 +482,17 @@ footer #footer-top form input {
 }
 footer #footer-bottom {
   background-color: var(--black);
-  margin-top: none;
-  padding: 35px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". footer-bottom-grid-item-area .";
+}
+footer #footer-bottom #footer-bottom-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-bottom-grid-item-area;
+}
+footer #footer-bottom #footer-bottom-grid-item p {
   text-align: center;
 }

@@ -10,7 +10,14 @@ footer{
 
         background-color: var(--black);
         padding: 100px 0;
-        display: flex;
+        // display: flex;
+        display: grid;
+        grid-template-columns: auto 1140px auto;
+        grid-template-areas: ". footer-top-grid-item-area .";
+        #footer-top-grid-item{
+            grid-area: footer-top-grid-item-area;
+
+        }
 
         aside{
 
@@ -78,10 +85,21 @@ footer{
     }
 
     #footer-bottom{
+
         background-color: var(--black);
-        margin-top: none;
-        padding: 35px 0;
-        text-align: center;
+        // margin-top: none;
+        // padding: 35px 0;
+        // text-align: center;
+        display: grid;
+        grid-template-columns: auto 1140px auto;
+        grid-template-areas: ". footer-bottom-grid-item-area .";
+        #footer-bottom-grid-item{
+            grid-area: footer-bottom-grid-item-area;
+            p{
+                text-align: center;
+            }
+        }
+
     }
 
 }
