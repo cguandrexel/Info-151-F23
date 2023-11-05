@@ -339,8 +339,8 @@ body {
 body main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1000px auto;
-  grid-template-columns: auto 1000px auto;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
       grid-template-areas: ". main-grid-area .";
 }
 body main #main-grid-item {
@@ -351,6 +351,14 @@ body main #main-grid-item {
 
 #validation-logo {
   margin-top: 60px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -421,6 +429,7 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 nav ul {
@@ -430,6 +439,9 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -458,8 +470,19 @@ nav ul #sign-in-button {
 ============= */
 header {
   padding: 40px 0 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
 }
-
+header #logo_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /* =============
     Footer
 ============= */
@@ -468,7 +491,6 @@ header {
 ============= */
 #hero {
   color: var(--white);
-  background: linear-gradient(130deg, #461096 0%, #7F3CE0 100%);
 }
 #hero #hero-content h1 {
   margin-bottom: 140px;

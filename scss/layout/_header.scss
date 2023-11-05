@@ -4,4 +4,18 @@
 
 header{
     padding: 40px 0 70px;
+
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    #logo_container{
+        display: flex;
+        align-items: center;
+    }
+
+    nav{
+
+    }
+
+
 }
