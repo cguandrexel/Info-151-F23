@@ -10,102 +10,70 @@ footer{
 
         background-color: var(--black);
         padding: 100px 0;
-        // display: flex;
         display: grid;
         grid-template-columns: auto 1140px auto;
         grid-template-areas: ". footer-top-grid-item-area .";
         #footer-top-grid-item{
             grid-area: footer-top-grid-item-area;
             display: grid;
-            grid-template-columns: 20% 18% 20% auto;
-        }
+            grid-template-columns: 25.3% 10% 13.4% 26.8%;
 
-        aside{
+            aside{
 
-            p{
-                margin-top: 30px;
-                width: 288px;
-                font-size: rem-calc(18);
-            }
-
-            ul{
-                margin-top: 30px;
-                display: flex;
-                justify-content: flex-start;
-
-                li{
-                    list-style: none;
-                    font-size: rem-calc(18);
-                    a{
-                        text-decoration: none;
-                        color: var(--gray);
-                    }
-                    margin-right: 25px;
+                p{
+                    margin-top: 30px;
+                    width: 288px;
+                    font-size: rem-calc(16);
                 }
-
-            }
-        }
-
-        section{
-
-            margin-left: 80px;
-
-            // .link-list{
-            //     margin-top: 30px;
-            //     // a:link, a:visited{
-            //     //     color: var(--gray);
-            //     //     transition: 0.25s;
-            //     //     margin-bottom: 12px;
-            //     // }
-            //     // a:hover, a:active{
-            //     //     color: var(--blue);
-            //     // }
-            //     li{
-            //         a{
-            //             text-decoration: none;
-            //             color: var(--gray);
-            //         }
-            //     }
-            // }
-
-            p{
-                font-size: reme-calc(18);
-                margin-top: 30px;
-            }
-
-            h1{
-                font-size: rem-calc(22);
-                margin-bottom: 50px;
-            }
-
-            a:link, a:visited{
-                color: var(--gray);
-                transition: 0.25s;
-                margin-bottom: 12px;
-            }
-            a:hover, a:active{
-                color: var(--blue);
-            }
-
-            ul{
-                li{
-                    list-style: none;
+    
+                ul{
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: flex-start;
+    
+                    li{
+                        list-style: none;
+                        font-size: rem-calc(18);
+                        a{
+                            text-decoration: none;
+                            color: var(--gray);
+                        }
+                        margin-right: 25px;
+                    }
+    
                 }
             }
-
-            form{
-                padding: 9px;
-                background-color: var(--black);
-                //for week 4
-                //display: inline-block;
-                display: flex;
-                border-radius: 5px;
-                input{
-                    border: solid 1px var(--gray);
-                    margin-right: auto;
-                    background-color: var(--black)
-                    width: 100%
+    
+            section{
+        
+                h1{
+                    font-size: rem-calc(22);
+                    margin-bottom: 30px;
+                }
+    
+                a:link, a:visited{
+                    color: var(--gray);
+                    transition: 0.25s;
+                    margin-bottom: 12px;
+                }
+                a:hover, a:active{
+                    color: var(--blue);
+                }
+    
+                form{
+                    padding: 9px;
+                    background-color: var(--black);
+                    //for week 4
+                    //display: inline-block;
+                    display: flex;
+                    border-radius: 5px;
+                    input{
+                        border: solid 1px var(--gray);
+                        margin-right: auto;
+                        background-color: var(--black)
+                        width: 100%
                     }
+                }
             }
         }
     }
@@ -113,9 +81,6 @@ footer{
     #footer-bottom{
 
         background-color: var(--black);
-        // margin-top: none;
-        // padding: 35px 0;
-        // text-align: center;
         display: grid;
         grid-template-columns: auto 1140px auto;
         grid-template-areas: ". footer-bottom-grid-item-area .";
@@ -125,7 +90,5 @@ footer{
                 text-align: center;
             }
         }
-
     }
-
 }
