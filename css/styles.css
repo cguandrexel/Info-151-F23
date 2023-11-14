@@ -333,6 +333,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 #validation-btn {
   text-align: center;
   margin-top: 100px;
@@ -341,6 +349,20 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -367,9 +389,109 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 1px solid var(--gray);
+  border: 1px solid red;
+}
+nav ul li {
+  border-bottom: 1px solid var(--gray);
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 10px;
+  border: 1px solid red;
+  display: inline-block;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 1.125rem;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--green);
+}
+nav ul li .dark-button {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid var(--green);
+  cursor: pointer;
+  margin-top: 19;
+  margin-bottom: 21;
+}
+nav ul li .ligh-button {
+  background-color: var(--white);
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 19;
+  margin-bottom: 21;
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 1px 24px;
+  border: solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% auto;
+  grid-template-columns: 90% auto;
+      grid-template-areas: "logo burger" "nav nav";
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burger;
+  border: 1px solid red;
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+  border: 1px solid red;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  border: 1px solid red;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
