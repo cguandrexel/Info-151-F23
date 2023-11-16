@@ -391,19 +391,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
 
+#mainNav {
+  display: none;
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray);
+}
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     border: none;
     margin-top: 0;
     padding-top: 0;
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +427,7 @@ nav ul {
   border-bottom: 1px solid var(--gray);
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -431,15 +441,15 @@ nav ul {
     height: 100%;
   }
 }
-nav ul li {
+#mainNav ul li {
   border-bottom: 1px solid var(--gray);
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainNav ul li {
     height: 100%;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 10px;
   display: inline-block;
   margin-top: 28px;
@@ -450,7 +460,7 @@ nav ul li a:link, nav ul li a:visited {
   font-size: 1.125rem;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -459,10 +469,10 @@ nav ul li a:link, nav ul li a:visited {
     padding-bottom: 0;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--green);
 }
-nav ul li .dark-button {
+#mainNav ul li .dark-button {
   background-color: var(--green);
   color: var(--white);
   border-radius: 8px;
@@ -472,7 +482,7 @@ nav ul li .dark-button {
   margin-top: 19;
   margin-bottom: 21;
 }
-nav ul li .ligh-button {
+#mainNav ul li .ligh-button {
   background-color: var(--white);
   color: var(--green);
   border: 1px solid var(--green);
