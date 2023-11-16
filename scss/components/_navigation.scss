@@ -9,13 +9,33 @@ a{
 
 nav{
 
+    @include xl{
+        border: none;
+        margin-top: 0;
+        padding-top: 0;
+        display: block;
+    }
+
     ul{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         border-bottom: 1px solid var(--gray);
         // border: 1px solid red;
+
+        @include xl{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+        }
+
         li{
+
+            @include xl{
+                height: 100%;
+            }
+
             border-bottom: 1px solid var(--gray);
             a:link, a:visited{
                 padding: 10px;
@@ -27,6 +47,15 @@ nav{
                 color: var(--gray);
                 transition: 0.25s;
                 font-size: rem-calc(18px);
+
+                @include xl{
+                    height: 100%;
+                    box-sizing: border-box;
+                    margin-bottom: 0px;
+                    padding: 12px;
+                    padding-bottom: 0;
+                }
+
             }
 
             a:hover, a:active{

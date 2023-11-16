@@ -4,7 +4,7 @@
 
 header{
 
-    padding: 1px 24px;
+    padding: 12px 24px;
     // adding border
     // border: solid red;
     display: grid;
@@ -13,6 +13,21 @@ header{
     "logo burger"
     "nav nav";
 
+    @include md{
+        grid-template-columns: 80% auto;
+    }
+
+    @include lg{
+        grid-template-columns: 20% auto 4%;
+    }
+
+    @include xl{
+        grid-template-columns: 20% auto;
+        grid-template-areas: 
+        "logo nav";
+        padding: 24px 48px;
+    }
+
     #burger-container{
         display: flex;
         justify-content: flex-end;
@@ -20,6 +35,9 @@ header{
         grid-area: burger;
         // adding border
         // border: 1px solid red;
+        @include xl{
+            display: none;
+        }
     }
 
     #logo-container{
