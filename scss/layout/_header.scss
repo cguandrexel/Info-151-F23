@@ -6,7 +6,7 @@ header{
 
     padding: 1px 24px;
     // adding border
-    border: solid red;
+    // border: solid red;
     display: grid;
     grid-template-columns: 90% auto;
     grid-template-areas: 
@@ -19,7 +19,7 @@ header{
         align-items: center;
         grid-area: burger;
         // adding border
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     #logo-container{
@@ -27,12 +27,12 @@ header{
         align-items: center;
         grid-area: logo;
         // adding border
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     nav{
         // adding border
-        border: 1px solid red;
+        // border: 1px solid red;
         grid-area: nav;
     }
 
