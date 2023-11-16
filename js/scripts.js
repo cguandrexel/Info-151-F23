@@ -18,5 +18,4 @@ function showNav(){
         canYouSeeMainNav = false;
     }
 }
-
-burgerBtn.addEventListener("click", showNav());
+burgerBtn.addEventListener("click", showNav);
