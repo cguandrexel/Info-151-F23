@@ -2,7 +2,6 @@
 var mainNav = document.querySelector("#mainNav");
 
 var burgerBtn = document.querySelector("#burger-container button");
-// console.log(burgerBtn);
 
 var canYouSeeMainNav = false;
 

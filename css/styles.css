@@ -368,6 +368,14 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -392,7 +400,7 @@ textarea {
     Navigation
 ============= */
 .showMainNav {
-  display: block;
+  display: block !important;
 }
 
 a {
