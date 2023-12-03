@@ -779,6 +779,13 @@ header #burger-container button {
           box-sizing: border-box;
   border-radius: 8px;
 }
+#sign-up-container form #input-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
 #sign-up-container form .close-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
