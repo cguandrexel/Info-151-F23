@@ -79,3 +79,8 @@ burgerBtn.addEventListener("click", showNav);
 
  signInContainer.addEventListener("click", hideSignInModal);
  
+
+ /* --------------------
+    Sign Up 
+ -------------------- */  
+ 
