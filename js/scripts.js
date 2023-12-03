@@ -9,14 +9,13 @@ var burgerBtn = document.querySelector("#burger-container button");
 var burgerBars = document.querySelector("#burger-bars");
 var burgerX = document.querySelector("#burger-x");
 
-
 // this can only be true or false known as a boolean
 var canYouSeeMainNav = false;
 
 function showNav(){
     // console.log("button clicked");
     if(canYouSeeMainNav === false){
-        console.log("show menu");
+        //console.log("show menu");
         // this will add the class of showMainNav to the id mainNav
         mainNav.classList.add("showMainNav");
 
@@ -30,7 +29,7 @@ function showNav(){
         burgerX.classList.remove("hide-burger-x");
 
     }else{
-        console.log("hide menu");
+        //console.log("hide menu");
         // this will remove the class of showMainNav to the id mainNav
         mainNav.classList.remove("showMainNav");
 
@@ -51,14 +50,13 @@ function showNav(){
 burgerBtn.addEventListener("click", showNav);
 
 
-
 /* --------------------
     Sign In 
  -------------------- */  
  var signInBtn = document.querySelector("#sign-in-btn");
+//  var signInContainer = document.querySelector("#sign-in-container");
  var signInContainer = document.querySelector("#sign-in-container");
- var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
-
+ var closeSignInModalBtn = document.querySelector("#close-sign-in-modal-btn");
 
  function showSignInModal() {
     // console.log("show modal now");
@@ -71,16 +69,35 @@ burgerBtn.addEventListener("click", showNav);
 
  function hideSignInModal(){
     signInContainer.classList.remove("show-signIn-container");
-    
  }
 
  signInBtn.addEventListener("click", showSignInModal);
- closeSignUpModalBtn.addEventListener("click", hideSignInModal);
-
+ closeSignInModalBtn.addEventListener("click", hideSignInModal);
  signInContainer.addEventListener("click", hideSignInModal);
  
 
  /* --------------------
     Sign Up 
  -------------------- */  
+ var signUpBtn = document.querySelector("#sign-up-btn");
+ var signUpContainer = document.querySelector("#sign-up-container");
+ var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+
+function showSignUpModal() {
+    // console.log("show modal now");
+    signUpContainer.classList.add("show-signUp-container");
+    // hide the navigation on close
+    mainNav.classList.remove("showMainNav");
+    // hide the signup/in buttons
+    signInUpButtons.classList.remove("showSignUp");
+ }
+
+ function hideSignUpModal(){
+    signUpContainer.classList.remove("show-signUp-container");
+ }
+
+ signUpBtn.addEventListener("click", showSignUpModal);
+ closeSignUpModalBtn.addEventListener("click", hideSignUpModal);
+ signUpContainer.addEventListener("click", hideSignUpModal);
+
  

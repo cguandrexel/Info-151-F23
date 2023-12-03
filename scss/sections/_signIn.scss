@@ -23,7 +23,8 @@
         box-sizing: border-box;
         border-radius: 8px;
 
-        #close-button-container{
+        //changed close-button-container from id to class
+        .close-button-container{
             display: flex;
             justify-content: flex-end;
             margin-bottom: 24px;
