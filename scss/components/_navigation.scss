@@ -6,12 +6,12 @@
     display: block !important;
 }
 
+
 a{
     text-decoration: none;
 }
 
 #mainNav{
-
     // hide the nav on page load
     display: none;
     margin-top: 12px;
@@ -29,8 +29,6 @@ a{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        border-bottom: 1px solid var(--gray);
-        // border: 1px solid red;
 
         @include xl{
             flex-direction: row;
@@ -39,23 +37,20 @@ a{
             height: 100%;
         }
 
-        li{
 
+        li{
             @include xl{
                 height: 100%;
             }
 
-            border-bottom: 1px solid var(--gray);
+
             a:link, a:visited{
                 padding: 10px;
-                //adding border
                 // border: 1px solid red;
                 display: inline-block;
-                margin-top: 28px;
-                margin-bottom: 28px;
-                color: var(--gray);
+                margin-bottom: 12px;
+                color: var(--black);
                 transition: 0.25s;
-                font-size: rem-calc(18px);
 
                 @include xl{
                     height: 100%;
@@ -64,35 +59,27 @@ a{
                     padding: 12px;
                     padding-bottom: 0;
                 }
-
             }
 
             a:hover, a:active{
-                color: var(--green);
+                color: var(--gray);
             }
 
-            .dark-button{
-                background-color: var(--green);
+            .loginSign-btn{
+                background-color: var(--black);
                 color: var(--white);
                 border-radius: 8px;
                 padding: 12px;
-                border: 1px solid var(--green);
+                font-weight: 600;
+                border: none;
+                transition: 0.25s;
                 cursor: pointer;
-                margin-top: 19;
-                margin-bottom: 21;
             }
 
-            .ligh-button{
-                background-color: var(--white);
-                color: var(--green);
-                border: 1px solid var(--green);
-                border-radius: 8px;
-                padding: 12px;
-                cursor: pointer;
-                margin-top: 19;
-                margin-bottom: 21;
+            .loginSign-btn:hover{
+                background-color: var(--gray);
+                
             }
         }
     }
-
 }

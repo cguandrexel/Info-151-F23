@@ -3,18 +3,15 @@
 ============= */
 
 header{
-
     padding: 12px 24px;
-    // adding border
-    // border: solid red;
     display: grid;
-    grid-template-columns: 90% auto;
+    grid-template-columns: 50% auto 8%;
     grid-template-areas: 
-    "logo burger"
-    "nav nav";
+    "logo search burger"
+    "nav nav nav";
 
     @include md{
-        grid-template-columns: 80% auto;
+        grid-template-columns: 50% auto 4%;
     }
 
     @include lg{
@@ -22,10 +19,55 @@ header{
     }
 
     @include xl{
-        grid-template-columns: 20% auto;
+        grid-template-columns: 15% auto 40%;
         grid-template-areas: 
-        "logo nav";
+        "logo search nav";
+
         padding: 24px 48px;
+    }
+
+    #logo-container{
+        display: flex;
+        align-items: center;
+        grid-area: logo;
+    }
+
+    #search{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: search;
+        // border: 1px solid red;
+
+        @include xl{
+            justify-content: flex-start;
+        }
+
+        form{
+
+            @include lg{
+                border: 1px solid var(--gray);
+                padding: 12px;
+                display: flex;
+                border-radius: 8px;
+                width: 80%;
+            }
+
+            button{
+                border: none;
+                background-color: transparent;
+            }
+
+            input{
+                display: none;
+
+                @include lg{
+                    display: block;
+                    border: none;
+                    width: 80%;
+                }
+            }
+        }
     }
 
     #burger-container{
@@ -33,25 +75,16 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
-        // adding border
-        // border: 1px solid red;
+
         @include xl{
             display: none;
         }
-    }
-
-    #logo-container{
-        display: flex;
-        align-items: center;
-        grid-area: logo;
-        // adding border
-        // border: 1px solid red;
+        
     }
 
     nav{
-        // adding border
-        // border: 1px solid red;
         grid-area: nav;
+        // see navigation partial for scss
+        
     }
-
 }
