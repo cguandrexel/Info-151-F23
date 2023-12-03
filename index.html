@@ -5,54 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/088aac8574.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7</title>
+    <title>Week 8 Modals</title>
 </head>
 
 <body>
+    
+    <section id="sign-in-container">
+        <form action="#">
+            <div id="close-button-container">
+                <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <input type="text" placeholder="User Name"> 
+            <input type="text" placeholder="Password"> 
+            <div id="sign-in-button-container">
+                <button class="white-btn">Sign In</button>
+            </div>
+            
+        </form>
+    </section>
+
     <header>
 
         <section id="logo-container">
-            <img src="img/logo.svg" alt="website logo">
+            <img src="img/logo.svg" alt="waterdrop logo">
         </section>
 
-        <section id="burger-container">
-            <button> 
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </section>
-
-        <!-- <section id="burger-container">
-            <i class="fa-solid fa-bars"></i>
-        </section> -->
-
-        <nav id="mainNav">
+        <nav id="main-nav">
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Impact</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><button class="dark-button">Sign In</button><button class="ligh-button">Sign Up</button></li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Impact</a>
+                </li>
+                <li>
+                    <a href="#">Locations</a>
+                </li>
             </ul>
         </nav>
 
+        <section id="sign-in-up-buttons">
+            <button class="green-btn" id="sign-in-btn">Sign In</button>
+            <button class="white-btn">Sign Up</button>
+        </section>
+
+        <section id="burger-container">
+            <button>
+                <i class="fa-solid fa-bars" id="burger-bars"></i>
+                <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
+            </button>
+            
+        </section>
+
     </header>
 
-    <!-- Adding background image section, URL in CSS -->
-    <section id="hero"></section>
+    <section id="hero">
 
-    <!-- HTML5 Validation Code -->
-    <div id="validation-btn">
-        <a href="https://validator.w3.org/nu/?doc=https://week-7-js--info-151-cguan.netlify.app" target="_blank">
-            <img src="img/html-logo.svg" alt="Valid HTML 5">
-        </a>
-    </div>
+    </section>
 
     <script src="js/scripts-dist.js"></script>
     
