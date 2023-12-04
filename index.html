@@ -12,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <!-- Fancy App -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8 Sign-up</title>
+    <title>Week 10 Fancy App</title>
 </head>
 
 <body>
@@ -96,8 +99,19 @@
 
     </header>
 
-    <section id="hero">
+    <section id="hero"></section>
 
+    <!-- Fancy Carousel -->
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <div class="f-carousel__slide"><img src="img/fancy_app/image-1.jpg" alt=""></div>
+                <div class="f-carousel__slide"><img src="img/fancy_app/image-2.jpg" alt=""></div>
+                <div class="f-carousel__slide"><img src="img/fancy_app/image-3.jpg" alt=""></div>
+                <div class="f-carousel__slide"><img src="img/fancy_app/image-4.jpg" alt=""></div>
+            </div>
+        </div>
     </section>
 
     <div id="validation-btn">
@@ -105,6 +119,9 @@
             <img src="img/html-logo.svg" alt="Valid HTML 5">
         </a>
     </div>
+
+    <!-- For Fancy Carousel: https://fancyapps.com/carousel/getting-started/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
     

@@ -684,7 +684,7 @@ header #burger-container button {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 200vh;
+  height: 90vh;
 }
 
 /* =============
@@ -816,4 +816,49 @@ header #burger-container button {
   background-color: var(--greenLight);
   color: var(--white);
   border: 1px solid var(--white);
+}
+
+/* =============
+    Fancy Carousel
+============= */
+#fancyCarousel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". fc .";
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  #fancyCarousel {
+    margin: 100px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #fancyCarousel {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#fancyCarousel #fc-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: fc;
+}
+#fancyCarousel #fc-grid-item .slide {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#fancyCarousel #fc-grid-item #fc-1 {
+  background-image: url("../img/fancy_app/image-1.jpg");
+}
+#fancyCarousel #fc-grid-item #fc-2 {
+  background-image: url("../img/fancy_app/image-2.jpg");
+}
+#fancyCarousel #fc-grid-item #fc-3 {
+  background-image: url("../img/fancy_app/image-3.jpg");
+}
+#fancyCarousel #fc-grid-item #fc-4 {
+  background-image: url("../img/fancy_app/image-4.jpg");
 }
